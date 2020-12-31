@@ -8,16 +8,23 @@ var btnTranslate = document.querySelector("#btn-translate")
 var txtInput = document.querySelector("#txt-input")
 var outputDiv = document.querySelector("#output")
 
-var serverURL = "https://repl.it/@Mrinal11/DespicableMe#api.js"
+var serverURL = "https://repl.it/@Mrinal11/yodaAPI#index.js"
 
-function getTranslateURL(input){
+function getTranslateURL(input) {
     return serverURL + "?" + "text= " + input
 }
 
-function clickHandler(){
+function clickHandler() {
     //console.log("clicked!!");
     //console.log("input",txtInput.value);
-    outputDiv.innerText = "Hi! How you Doin " + txtInput.value ;
+    //outputDiv.innerText = "Hi! How you Doin " + txtInput.value ;
+    var inputText = txtInput.value; //taking input
+    
+    //calling server for processing 
+    fetch(getTranslationURL(text))
+    .then(response => response.json())
+    .then(json => console.log(json))
+
 };
 
 btnTranslate.addEventListener("click", clickHandler)
