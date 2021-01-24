@@ -4,7 +4,7 @@ The name "javascript in browser" is super funny. JavaScript was exclusively for 
 
 - Use (https://repl.it/@Mrinal11/yodaAPI#index.js) this with ```var serverURL``` variable
 
-- What we did:  
+## What we did:  
 
 
 Attaching events to HTML elements  
