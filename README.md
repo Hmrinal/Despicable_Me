@@ -6,7 +6,6 @@ The name "javascript in browser" is super funny. JavaScript was exclusively for 
 
 ## What we did:  
 
-
 Attaching events to HTML elements  
 Taking user input in browser  
 querySelector()  
